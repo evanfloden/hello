@@ -1,0 +1,6 @@
+name: hello
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - procps-ng=4.0
