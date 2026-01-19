@@ -2,3 +2,15 @@
 .nextflow*
 .idea/
 work/
+
+# Optimization artifacts (not part of original hello pipeline)
+configs/
+orchestrator_cli.py
+launch_optimization.py
+run_optimization.py
+.gitignore-optimizer
+mlruns/
+*.db
+orchestrator_state.json
+data/
+results/
