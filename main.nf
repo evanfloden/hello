@@ -7,6 +7,7 @@ params.repeat_count = 1
 params.outdir = 'results'
 
 process sayHello {
+    conda 'conda-forge::procps-ng=4.0'
     publishDir "${params.outdir}", mode: 'copy'
 
     input:
@@ -69,6 +70,7 @@ process sayHello {
 }
 
 process aggregateMetrics {
+    conda 'conda-forge::procps-ng=4.0'
     publishDir "${params.outdir}", mode: 'copy'
 
     input:
